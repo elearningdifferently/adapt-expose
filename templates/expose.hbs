@@ -8,8 +8,10 @@
                     <button class="expose-item-button"></button>
                     <div class="expose-item-cover">
                         <div class="back"></div>
-                        <div class="front"></div>
+                        <div class="front"{{#if _front_graphic}} style="background: url({{_front_graphic.src}}) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;" {{/if}}></div>
+                        <div class="text-bg">
                         <span class="text">{{#if front}} {{{a11y_text front}}} {{else}} ? {{/if}}</span>
+                        </div>
                     </div>
                     <div class="expose-item-content">
                         {{#with back}}

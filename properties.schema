@@ -67,6 +67,30 @@
             "help": "The text to display on the front cover",
             "translatable": true
           },
+            "_front_graphic": {
+                "type": "object",
+                "required": false,
+                "title": "Front Image",
+                "properties":{
+                  "alt": {
+                    "type": "string",
+                    "required": false,
+                    "default": "",
+                    "inputType": "Text",
+                    "validators": [],
+                    "help": "The alternative text for the front image",
+                    "translatable": true
+                  },
+                  "src": {
+                    "type": "string",
+                    "required": false,
+                    "default": "",
+                    "inputType": "Asset:image",
+                    "validators": [],
+                    "help": "Optional image which will be rendered on the items front"
+                  }
+                }
+              },
           "back": {
             "type": "object",
             "required": true,
