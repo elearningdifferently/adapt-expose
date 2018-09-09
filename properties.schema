@@ -72,15 +72,6 @@
                 "required": false,
                 "title": "Front Image",
                 "properties":{
-                  "alt": {
-                    "type": "string",
-                    "required": false,
-                    "default": "",
-                    "inputType": "Text",
-                    "validators": [],
-                    "help": "The alternative text for the front image",
-                    "translatable": true
-                  },
                   "src": {
                     "type": "string",
                     "required": false,
