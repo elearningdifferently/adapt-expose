@@ -18,6 +18,14 @@
                             {{#if title}}<div class="expose-item-title">{{{a11y_text title}}}</div>{{/if}}
                             {{#if body}}<div class="expose-item-body">{{{a11y_text body}}}</div>{{/if}}
                             {{#if _graphic}}<img class="expose-item-img" src="{{_graphic.src}}" alt="{{_graphic.alt}}">{{/if}}
+                         {{#if audio}}
+                            <div class="expose-item-audio">
+                             <audio class="audio-player paused" id="audio" style="width:100%;">
+                                <source src="{{audio}}" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                             </audio> 
+                            </div>
+                         {{/if}}
                         {{/with}}
                     </div>
                 </div>

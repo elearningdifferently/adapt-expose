@@ -129,7 +129,16 @@
                     "help": "Optional image which will be rendered with the item body text"
                   }
                 }
-              }
+              },
+          "audio": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Slide audio",
+          "inputType": "Asset:audio",
+          "validators": [],
+          "help": "Link to an MP3 audio"
+        }
             }
           }
         }
