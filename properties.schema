@@ -67,6 +67,21 @@
             "help": "The text to display on the front cover",
             "translatable": true
           },
+            "_front_graphic": {
+                "type": "object",
+                "required": false,
+                "title": "Front Image",
+                "properties":{
+                  "src": {
+                    "type": "string",
+                    "required": false,
+                    "default": "",
+                    "inputType": "Asset:image",
+                    "validators": [],
+                    "help": "Optional image which will be rendered on the items front"
+                  }
+                }
+              },
           "back": {
             "type": "object",
             "required": true,
@@ -114,7 +129,16 @@
                     "help": "Optional image which will be rendered with the item body text"
                   }
                 }
-              }
+              },
+          "audio": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Slide audio",
+          "inputType": "Asset:audio",
+          "validators": [],
+          "help": "Link to an MP3 audio"
+        }
             }
           }
         }

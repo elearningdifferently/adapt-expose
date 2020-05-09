@@ -54,6 +54,23 @@
 		padding: 0;
 		text-align: center;
 		color: @primary-color-inverted;
+        
+        .text-bg {
+  			position: relative;
+			display: inline-block;
+			position: relative;
+			top: 50%;
+			width: 80%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			font-size: 26px;
+            background-color: @primary-color;
+            padding-top: 25px;
+            padding-bottom: 5px;
+                }
 
 		.text {
 			position: relative;
@@ -66,8 +83,7 @@
 			transform: translateY(-50%);
 			-webkit-backface-visibility: hidden;
 			backface-visibility: hidden;
-			font-size: 24px;
-
+			font-size: 26px;
 		}
 
 		.back,

@@ -8,14 +8,24 @@
                     <button class="expose-item-button"></button>
                     <div class="expose-item-cover">
                         <div class="back"></div>
-                        <div class="front"></div>
+                        <div class="front"{{#if _front_graphic.src}} style="background: url({{_front_graphic.src}}) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;" {{else}} {{/if}}></div>
+                        <div class="text-bg">
                         <span class="text">{{#if front}} {{{a11y_text front}}} {{else}} ? {{/if}}</span>
+                        </div>
                     </div>
                     <div class="expose-item-content">
                         {{#with back}}
                             {{#if title}}<div class="expose-item-title">{{{a11y_text title}}}</div>{{/if}}
                             {{#if body}}<div class="expose-item-body">{{{a11y_text body}}}</div>{{/if}}
                             {{#if _graphic}}<img class="expose-item-img" src="{{_graphic.src}}" alt="{{_graphic.alt}}">{{/if}}
+                         {{#if audio}}
+                            <div class="expose-item-audio">
+                             <audio class="audio-player paused" id="audio" style="width:100%;">
+                                <source src="{{audio}}" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                             </audio> 
+                            </div>
+                         {{/if}}
                         {{/with}}
                     </div>
                 </div>

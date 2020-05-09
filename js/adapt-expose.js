@@ -67,7 +67,25 @@ define(function(require) {
 			if (e.target.tagName === "A") return;
 			var $parent = $(e.currentTarget).parent();
 			var $cover = $parent.children(".expose-item-cover");
+            var $content = $parent.children(".expose-item-content");
+            var $audiocontainer = $content.children(".expose-item-audio");
+            var $audioplayer = $audiocontainer.children(".audio-player");
 			$cover.toggleClass(this.animationType);
+            
+            if ($audioplayer.length !== 0) {
+            
+            if ($audioplayer.is(".paused")) {
+                var sounds = document.getElementsByTagName('audio');
+                for(i=0; i<sounds.length; i++) sounds[i].pause();
+                $audioplayer.get(0).currentTime = 0;
+                $audioplayer.get(0).play();
+                $audioplayer.removeClass("paused");
+                } else {
+                 $audioplayer.get(0).pause();
+                 $audioplayer.addClass("paused");
+                }
+            }
+            
 			if (!$cover.is(".visited")) {
 				$cover.addClass("visited");
 				var i = $cover.parents(".expose-item").index();

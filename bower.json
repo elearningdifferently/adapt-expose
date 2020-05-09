@@ -1,14 +1,14 @@
 {
   "name": "adapt-expose",
   "description": "Content is hidden behind covers. Click the cover and expose the content below. Range of animations. Demo available.",
-  "version": "1.1.3",
+  "version": "1.3.7",
   "framework": "^2.0.0",
   "displayName": "Expose",
   "component": "expose",
   "main": "/js/adapt-expose.js",
-  "homepage": "https://github.com/danielstorey/adapt-expose",
-  "repository": "git://github.com/danielstorey/adapt-expose.git",
-  "issues": "https://github.com/danielstorey/adapt-expose/issues",
+  "homepage": "https://github.com/elearningdifferently/adapt-expose",
+  "repository": "git://github.com/elearningdifferently/adapt-expose.git",
+  "issues": "https://github.com/elearningdifferently/adapt-expose/issues",
   "keywords": [
     "adapt-plugin",
     "adapt-component"
