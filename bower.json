@@ -1,8 +1,8 @@
 {
   "name": "adapt-expose",
   "description": "Content is hidden behind covers. Click the cover and expose the content below. Range of animations. Demo available.",
-  "version": "1.3.7",
-  "framework": "^2.0.0",
+  "version": "1.4.1",
+  "framework": "^5.0.0",
   "displayName": "Expose",
   "component": "expose",
   "main": "/js/adapt-expose.js",
